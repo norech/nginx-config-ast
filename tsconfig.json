@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "outDir": "./build",
-      "rootDir": "./src",
-      "strict": true,
-      "typeRoots": [
-        "./node_modules/@types",
-        "./typings"
-      ],
-      "esModuleInterop": true
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./build",
+        "rootDir": "./src",
+        "strict": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ],
+        "esModuleInterop": true,
+        "declaration": true
     }
   }
