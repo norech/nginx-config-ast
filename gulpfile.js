@@ -44,4 +44,4 @@ gulp.task("peg:build", ["make-build-folder"], function(done) {
 });
 
 
-gulp.task("dev", ["peg:build", "ts:build"], function() {});
+gulp.task("build", ["peg:build", "ts:build"], function() {});

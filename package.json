@@ -1,11 +1,14 @@
 {
   "name": "nginx-config-ast",
   "description": "A parser and code generator for NGINX configuration files",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "build/index.js",
   "repository": "https://github.com/Norech/nginx-config-ast.git",
   "author": "Alexis Norech <alexis.norech@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "postpublish": "gulp build"
+  },
   "devDependencies": {
     "@types/node": "^10.12.10",
     "gulp": "^3.9.1",
