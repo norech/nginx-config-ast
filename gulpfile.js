@@ -26,6 +26,11 @@ gulp.task("ts:build", ["make-build-folder"], function() {
         .pipe(gulp.dest("build"));
 });
 
+gulp.task("ts:copy-definitions", ["ts:build"], function() {
+    gulp.src(["src/**/*.d.ts"])
+        .pipe(gulp.dest("build"));
+});
+
 gulp.task("peg:build", ["make-build-folder"], function(done) {
     fs.readFile(__dirname + "/src/parser.pegjs", function(err, data) {
         if(err) done(err);
@@ -44,4 +49,4 @@ gulp.task("peg:build", ["make-build-folder"], function(done) {
 });
 
 
-gulp.task("build", ["peg:build", "ts:build"], function() {});
+gulp.task("build", ["peg:build", "ts:build", "ts:copy-definitions"], function() {});
