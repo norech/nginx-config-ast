@@ -1,7 +1,7 @@
 {
   "name": "nginx-config-ast",
   "description": "A parser and code generator for NGINX configuration files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "build/index.js",
   "repository": "https://github.com/Norech/nginx-config-ast.git",
   "author": "Alexis Norech <alexis.norech@gmail.com>",
