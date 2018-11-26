@@ -1,6 +1,6 @@
 {
   "name": "nginx-config-ast",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "build/index.js",
   "repository": "https://github.com/Norech/nginx-config-ast.git",
   "author": "Alexis Norech <alexis.norech@gmail.com>",
